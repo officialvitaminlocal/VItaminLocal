@@ -1,0 +1,145 @@
+header {
+    @extend %clearfix;
+    position: fixed;
+    z-index: 97;
+    width: 100%;
+    height: 72px;
+    border-bottom: 2px solid $bc-lightgreen;
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+    .header-menu-icon {
+        float: left;
+        margin: 23px 0 0 16px;
+        i.fa.fa-bars {
+            color: $bc-darkgreen;
+            font-size: 22.256px;
+            margin-left: 2.5px;
+            margin-bottom: 3px; 
+            float: left;
+            clear: both;
+        }
+        span.header-menu-caption {
+            font-size: 9.256px;
+            font-weight: bold;
+            color: $bc-darkgreen;
+            float: left;
+            clear: both;
+        }
+    }
+    .header-logo {
+        position: relative;
+        left: calc(50% - 85px);
+        img {
+            height: 64px;
+        }
+    }
+    .header-search-icon {
+        float: right;
+        margin: 23px 18px 0 0;
+        i.fa.fa-search {
+            color: $bc-darkgreen;
+            font-size: 25.63px;
+        }
+    }
+    .header-cart-icon {
+        float: right;
+        margin: 22px 16px 0 0;
+        i.fa.fa-shopping-cart {
+            color: $bc-darkgreen;
+            font-size: 28.84px;
+        }
+    }
+}
+
+//Sidebar
+aside.sidebar {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    height: 100vh;
+    background: white;
+    transition: left 300ms;
+    overflow: hidden;
+    overflow-y: scroll;
+    @include breakpoint($small) {
+        left: -70vw;
+        width: 70vw;
+    }
+    @include breakpoint($medium) {
+        left: -320px;
+        width: 320px;
+    }
+    &.expand {
+        left: 0;
+        transition: left 500ms;
+    }
+    a.sidebar-item {
+        font-size: $h5;
+        padding: 1.2em;
+        display: block;
+        border-bottom: 1px solid $bc-lightgrey;
+        i {
+            font-weight: bold;
+            font-size: $h4;
+            margin-top: -1.5px;
+            float: right;
+            &.fa-angle-left {
+                float:left;
+                margin-right: 1em;
+            }
+        }
+        &.sidebar-acordion-toggle i:after {
+            content:'+';
+        }
+        &.sidebar-acordion-toggle.minus i:after {
+            content:'-';
+        }
+    }
+    .sidebar-submenu {
+        position: absolute;
+        top:0;
+        min-height: 100vh;
+        background: white;
+        transition: left 300ms;
+        @include breakpoint($small) {
+            left: 140vw;
+            width: 70vw;
+        }
+        @include breakpoint($medium) {
+            left: 640px;
+            width: 320px;
+        }
+        &.expand {
+            left: 0;
+            transition: left 300ms;
+        }
+        .sidebar-submenu-close {
+            background: $bc-lightgreen;
+            color: white;
+        }
+    }
+    .sidebar-accordion {
+        max-height: 0;
+        transition: max-height 200ms ease-out;
+        overflow: hidden;
+        a.sidebar-item {
+            padding-left: 2em;
+            opacity: .87;
+        }
+    }
+}
+div.sidebar-overlay {
+    display: none;
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.48);
+    &.expand {
+        display: block;
+    }
+}
