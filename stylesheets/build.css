@@ -1,5 +1,5 @@
 html {
-  font: normal 100%/1.5 'Ubuntu', sans-serif; }
+  font: normal 100%/1.5 'PT Sans', sans-serif; }
 
 body {
   max-width: 100%; }
@@ -41,7 +41,7 @@ header {
   z-index: 97;
   width: 100%;
   height: 72px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12); }
+  border-bottom: 2px solid #70BD77; }
   header a {
     display: inline-block;
     text-decoration: none; }
@@ -49,35 +49,34 @@ header {
     float: left;
     margin: 23px 0 0 16px; }
     header .header-menu-icon i.fa.fa-bars {
-      color: #3ab56e;
+      color: #1F8948;
       font-size: 22.256px;
-      margin-left: 4px;
+      margin-left: 2.5px;
       margin-bottom: 3px;
       float: left;
       clear: both; }
     header .header-menu-icon span.header-menu-caption {
       font-size: 9.256px;
       font-weight: bold;
-      color: #3ab56e;
+      color: #1F8948;
       float: left;
       clear: both; }
   header .header-logo {
     position: relative;
-    left: calc(50% - 122px);
-    top: 16px; }
+    left: calc(50% - 85px); }
     header .header-logo img {
-      width: 148px; }
+      height: 64px; }
   header .header-search-icon {
     float: right;
     margin: 23px 18px 0 0; }
     header .header-search-icon i.fa.fa-search {
-      color: #3ab56e;
+      color: #1F8948;
       font-size: 25.63px; }
   header .header-cart-icon {
     float: right;
     margin: 22px 16px 0 0; }
     header .header-cart-icon i.fa.fa-shopping-cart {
-      color: #3ab56e;
+      color: #1F8948;
       font-size: 28.84px; }
 
 aside.sidebar {
@@ -104,7 +103,7 @@ aside.sidebar {
     font-size: 1.125rem;
     padding: 1.2em;
     display: block;
-    border-bottom: 1px solid #34495e; }
+    border-bottom: 1px solid #dedede; }
     aside.sidebar a.sidebar-item i {
       font-weight: bold;
       font-size: 1.266rem;
@@ -135,7 +134,7 @@ aside.sidebar {
       left: 0;
       transition: left 300ms; }
     aside.sidebar .sidebar-submenu .sidebar-submenu-close {
-      background: #2ecc71;
+      background: #70BD77;
       color: white; }
   aside.sidebar .sidebar-accordion {
     max-height: 0;
@@ -157,4 +156,4 @@ div.sidebar-overlay {
   div.sidebar-overlay.expand {
     display: block; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=build.css.map */
