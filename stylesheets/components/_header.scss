@@ -3,8 +3,11 @@ header {
     position: fixed;
     z-index: 97;
     width: 100%;
-    height: 72px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,.12);
+    //Height Without Search
+    //height: 72px;
+    height: 120px;
+    background: white;
+    //box-shadow: 0px 4px 8px rgba(0,0,0,.12);
     //border-bottom: 2px solid $bc-lightgreen;
     a {
         display: inline-block;
@@ -14,7 +17,7 @@ header {
         float: left;
         margin: 23px 0 0 16px;
         i.fa.fa-bars {
-            color: $dark-green;
+            color: $bluegrey;
             font-size: 22.256px;
             margin-left: 4px;
             margin-bottom: 3px; 
@@ -24,15 +27,16 @@ header {
         span.header-menu-caption {
             font-size: 9.256px;
             font-weight: bold;
-            color: $dark-green;
+            color: $bluegrey;
             float: left;
             clear: both;
         }
     }
     .header-logo {
-        position: relative;
-        left: calc(50% - 122px);
-        top: 16px;
+        //position: relative;
+        //left: calc(50% - 122px);
+        //top: 16px;
+        margin: 16px 0 0 24px;
         img {
             width: 148px;
         }
@@ -43,6 +47,43 @@ header {
         i.fa.fa-shopping-cart {
             color: $dark-green;
             font-size: 28.84px;
+        }
+    }
+    .header-account-icon {
+        float: right;
+        margin: 22px 22px 0 0;
+        i.fa.fa-user-circle-o {
+            color: $dark-green;
+            font-size: 28.84px;
+        }
+    }
+
+    //Header Search Bar
+    form.header-search {
+        display: block;
+        box-sizing: border-box;
+        margin: 8px 0 0;
+        padding: 0 16px;
+        height: 40px;
+        width: 100%;
+        input.header-search-field {
+            float: left;
+            width: calc(100% - 48px);
+            height: 100%;
+            padding: 0 16px;
+            border: 0;
+            border-radius: 6px 0 0 6px;
+            background: rgba(0,0,0,.04);
+        }
+        button.header-search-button {
+            float: left;
+            height: 100%;
+            width: 48px;
+            border: 0;
+            border-radius: 0 6px 6px 0;
+            background: $light-green;
+            font-size: $base;
+            color: white;
         }
     }
 }
@@ -73,7 +114,7 @@ aside.sidebar {
         font-size: $h5;
         padding: 1.2em;
         display: block;
-        border-bottom: 1px solid $light-bluegrey;
+        border-bottom: 1px solid $bluegrey;
         i {
             font-weight: bold;
             font-size: $h4;

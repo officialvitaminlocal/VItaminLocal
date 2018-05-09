@@ -83,8 +83,8 @@ header {
   position: fixed;
   z-index: 97;
   width: 100%;
-  height: 72px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12); }
+  height: 120px;
+  background: white; }
   header a {
     display: inline-block;
     text-decoration: none; }
@@ -92,7 +92,7 @@ header {
     float: left;
     margin: 23px 0 0 16px; }
     header .header-menu-icon i.fa.fa-bars {
-      color: #3ab56e;
+      color: #34495e;
       font-size: 22.256px;
       margin-left: 4px;
       margin-bottom: 3px;
@@ -101,13 +101,11 @@ header {
     header .header-menu-icon span.header-menu-caption {
       font-size: 9.256px;
       font-weight: bold;
-      color: #3ab56e;
+      color: #34495e;
       float: left;
       clear: both; }
   header .header-logo {
-    position: relative;
-    left: calc(50% - 122px);
-    top: 16px; }
+    margin: 16px 0 0 24px; }
     header .header-logo img {
       width: 148px; }
   header .header-cart-icon {
@@ -116,6 +114,36 @@ header {
     header .header-cart-icon i.fa.fa-shopping-cart {
       color: #3ab56e;
       font-size: 28.84px; }
+  header .header-account-icon {
+    float: right;
+    margin: 22px 22px 0 0; }
+    header .header-account-icon i.fa.fa-user-circle-o {
+      color: #3ab56e;
+      font-size: 28.84px; }
+  header form.header-search {
+    display: block;
+    box-sizing: border-box;
+    margin: 8px 0 0;
+    padding: 0 16px;
+    height: 40px;
+    width: 100%; }
+    header form.header-search input.header-search-field {
+      float: left;
+      width: calc(100% - 48px);
+      height: 100%;
+      padding: 0 16px;
+      border: 0;
+      border-radius: 6px 0 0 6px;
+      background: rgba(0, 0, 0, 0.04); }
+    header form.header-search button.header-search-button {
+      float: left;
+      height: 100%;
+      width: 48px;
+      border: 0;
+      border-radius: 0 6px 6px 0;
+      background: #2ecc71;
+      font-size: 1rem;
+      color: white; }
 
 aside.sidebar {
   position: fixed;
@@ -193,5 +221,8 @@ div.sidebar-overlay {
   background: rgba(0, 0, 0, 0.48); }
   div.sidebar-overlay.expand {
     display: block; }
+
+main {
+  padding: 120px 0 0; }
 
 /*# sourceMappingURL=style.css.map */
