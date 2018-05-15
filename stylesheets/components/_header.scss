@@ -24,7 +24,7 @@ header {
             float: left;
             clear: both;
         }
-        span.header-menu-caption {
+        span.header-icon-caption {
             font-size: 9.256px;
             font-weight: bold;
             color: $bluegrey;
@@ -46,7 +46,17 @@ header {
         margin: 22px 22px 0 0;
         i.fa.fa-shopping-cart {
             color: $dark-green;
-            font-size: 28.84px;
+            font-size: 22.256px;
+            margin-left: 1px;
+            margin-bottom: 6px; 
+            float: left;
+        }
+        span.header-icon-caption {
+            font-size: 9.256px;
+            font-weight: bold;
+            color: $dark-green;
+            float: left;
+            clear: both;
         }
     }
     .header-account-icon {
@@ -54,7 +64,17 @@ header {
         margin: 22px 22px 0 0;
         i.fa.fa-user-circle-o {
             color: $dark-green;
-            font-size: 28.84px;
+            font-size: 22.256px;
+            margin-left: 11px;
+            margin-bottom: 6px; 
+            float: left;
+        }
+        span.header-icon-caption {
+            font-size: 9.256px;
+            font-weight: bold;
+            color: $dark-green;
+            float: left;
+            clear: both;
         }
     }
 
@@ -82,7 +102,9 @@ header {
             border: 0;
             border-radius: 0 6px 6px 0;
             background: $light-green;
-            font-size: $base;
+            font-size: 18px;
+            box-sizing: border-box;
+            padding-bottom: 3px;
             color: white;
         }
     }

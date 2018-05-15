@@ -98,7 +98,7 @@ header {
       margin-bottom: 3px;
       float: left;
       clear: both; }
-    header .header-menu-icon span.header-menu-caption {
+    header .header-menu-icon span.header-icon-caption {
       font-size: 9.256px;
       font-weight: bold;
       color: #34495e;
@@ -113,13 +113,31 @@ header {
     margin: 22px 22px 0 0; }
     header .header-cart-icon i.fa.fa-shopping-cart {
       color: #3ab56e;
-      font-size: 28.84px; }
+      font-size: 22.256px;
+      margin-left: 1px;
+      margin-bottom: 6px;
+      float: left; }
+    header .header-cart-icon span.header-icon-caption {
+      font-size: 9.256px;
+      font-weight: bold;
+      color: #3ab56e;
+      float: left;
+      clear: both; }
   header .header-account-icon {
     float: right;
     margin: 22px 22px 0 0; }
     header .header-account-icon i.fa.fa-user-circle-o {
       color: #3ab56e;
-      font-size: 28.84px; }
+      font-size: 22.256px;
+      margin-left: 11px;
+      margin-bottom: 6px;
+      float: left; }
+    header .header-account-icon span.header-icon-caption {
+      font-size: 9.256px;
+      font-weight: bold;
+      color: #3ab56e;
+      float: left;
+      clear: both; }
   header form.header-search {
     display: block;
     box-sizing: border-box;
@@ -142,7 +160,9 @@ header {
       border: 0;
       border-radius: 0 6px 6px 0;
       background: #2ecc71;
-      font-size: 1rem;
+      font-size: 18px;
+      box-sizing: border-box;
+      padding-bottom: 3px;
       color: white; }
 
 aside.sidebar {
@@ -224,5 +244,51 @@ div.sidebar-overlay {
 
 main {
   padding: 120px 0 0; }
+  main .header-offer-promo {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .64em;
+    background: #3ab56e; }
+  main .hero a {
+    width: 100%; }
+    main .hero a img {
+      width: 100vw; }
+  main section.top-categories {
+    width: 100vw;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+    main section.top-categories h4 {
+      margin: 1rem 0; }
+    main section.top-categories span {
+      font-weight: bold; }
+    main section.top-categories .top-categories-slider {
+      width: calc((40vw * 6) + (1rem *6));
+      margin: 0 0 1rem; }
+      main section.top-categories .top-categories-slider figure {
+        display: inline-block;
+        margin: 0 .5rem 0 0;
+        width: 40vw; }
+        main section.top-categories .top-categories-slider figure img {
+          width: 100%; }
+  main section.featured-product {
+    width: 100vw;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+    main section.featured-product h4 {
+      margin: 1rem 0; }
+    main section.featured-product span {
+      font-weight: bold; }
+    main section.featured-product .featured-product-container {
+      width: 100%;
+      margin: 0 0 1rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,64 @@
 main {
 	padding: 120px 0 0;
+	.header-offer-promo {
+		font-size: 14px;
+		font-weight: bold;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		padding:.64em;
+		background: $dark-green;
+	}
+	.hero {
+		a {
+			width:100%;
+			img {
+				width:100vw;
+			}
+		}
+	}
+	section.top-categories {
+		width:100vw;
+		padding: 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h4 {
+			margin: 1rem 0;
+		}
+		span {
+			font-weight: bold;
+		}
+		.top-categories-slider {
+			width: calc((40vw * 6) + (1rem *6));
+			margin: 0 0 1rem;
+			figure {
+				display: inline-block;
+				margin: 0 .5rem 0 0;
+				width: 40vw;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	section.featured-product {
+		width:100vw;
+		padding: 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h4 {
+			margin: 1rem 0;
+		}
+		span {
+			font-weight: bold;
+		}
+		.featured-product-container {
+			width: 100%;
+			margin: 0 0 1rem;
+		}
+	}
 }
