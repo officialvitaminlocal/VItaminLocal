@@ -1,13 +1,14 @@
 header {
     @extend %clearfix;
+    top: 32px;
     position: fixed;
     z-index: 97;
-    width: 100%;
+    width: 100vw;
     //Height Without Search
     //height: 72px;
     height: 120px;
     background: white;
-    //box-shadow: 0px 4px 8px rgba(0,0,0,.12);
+    box-shadow: 0px 4px 8px rgba(0,0,0,.12);
     //border-bottom: 2px solid $bc-lightgreen;
     a {
         display: inline-block;
@@ -199,4 +200,15 @@ div.sidebar-overlay {
     &.expand {
         display: block;
     }
+}
+.header-offer-promo {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding:.64em;
+    background: $dark-green;
+    position: fixed;
+    width: 100vw;
 }
