@@ -268,14 +268,17 @@ main {
     main section.top-categories span {
       font-weight: bold; }
     main section.top-categories .top-categories-slider {
-      width: calc((40vw * 6) + (1rem *6));
-      margin: 0 0 1rem; }
-      main section.top-categories .top-categories-slider figure {
-        display: inline-block;
-        margin: 0 .5rem 0 0;
-        width: 40vw; }
-        main section.top-categories .top-categories-slider figure img {
-          width: 100%; }
+      width: 100vw;
+      overflow: hidden; }
+      main section.top-categories .top-categories-slider .top-categories-scroll {
+        width: calc((40vw * 6) + (1rem *6));
+        margin: 0 0 1rem; }
+        main section.top-categories .top-categories-slider .top-categories-scroll figure {
+          display: inline-block;
+          margin: 0 .5rem 0 0;
+          width: 40vw; }
+          main section.top-categories .top-categories-slider .top-categories-scroll figure img {
+            width: 100%; }
   main section.featured-product {
     width: 100vw;
     padding: 0 1rem;

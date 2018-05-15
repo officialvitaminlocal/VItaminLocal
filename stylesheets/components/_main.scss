@@ -31,14 +31,18 @@ main {
 			font-weight: bold;
 		}
 		.top-categories-slider {
-			width: calc((40vw * 6) + (1rem *6));
-			margin: 0 0 1rem;
-			figure {
-				display: inline-block;
-				margin: 0 .5rem 0 0;
-				width: 40vw;
-				img {
-					width: 100%;
+			width: 100vw;
+			overflow: hidden;
+			.top-categories-scroll {
+				width: calc((40vw * 6) + (1rem *6));
+				margin: 0 0 1rem;
+				figure {
+					display: inline-block;
+					margin: 0 .5rem 0 0;
+					width: 40vw;
+					img {
+						width: 100%;
+					}
 				}
 			}
 		}
