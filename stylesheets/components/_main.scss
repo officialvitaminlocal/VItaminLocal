@@ -14,6 +14,7 @@ main {
 		box-sizing:border-box;
 		display: block;
 		h4 {
+			color:$bluegrey;
 			margin: 1rem 0;
 		}
 		span {
@@ -46,6 +47,7 @@ main {
 		overflow-y: hidden;
 		h4 {
 			margin: 1rem 0;
+			color:$bluegrey;
 			span {
 				font-weight: bold;
 			}
@@ -64,18 +66,42 @@ main {
 			.product-details {
 				text-align: center;
 				.product-brand {
+					color: rgba(0,0,0,.36);
 					font-size: $mini;
 					font-weight: bold;
 					margin: .175em;
 				}
 				.product-title{
+					color: rgba(0,0,0,.87);
 					font-size: $base;
 					font-weight: bold;
 					margin: .35em;
 				}
 				.product-subdetails {
+					color: rgba(0,0,0,.72);
 					font-size: $mini;
 					margin: .175em;
+				}
+				.product-cta {
+					margin:2rem 0;
+					.price-normal {
+						color: rgba(0,0,0,.48);
+						margin: .175em;
+					}
+					.price-sale {
+						font-size: $h5;
+						color: $red;
+						margin: .35em;
+						font-weight: bold;
+					}
+					.add-to-cart {
+						display: block;
+						background: $orange;
+						color: white;
+						box-sizing:border-box;
+						margin: 1em;
+						padding: 1em;
+					}
 				}
 			}
 		}

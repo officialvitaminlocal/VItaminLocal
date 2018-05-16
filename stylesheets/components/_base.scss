@@ -1,6 +1,44 @@
+/*
+ * Wew Boy
+ */
+//Heading Variables
+$h1: 1.802rem;
+$h2: 1.602rem;
+$h3: 1.424rem;
+$h4: 1.266rem;
+$h5: 1.125rem;
+$base: 1rem;
+$mini: .875rem;
+
+//Colors
+$white: rgba(255, 255, 255, 1);
+$bluegrey: rgba(52, 73, 94, 1);
+$orange: rgba(225, 112, 85, 1);
+$red: rgba(145, 14, 0, 1);
+$light-green: rgba(46, 204, 113, 1);
+$dark-green: rgba(58, 181, 110, 1);
+$font-color: rgba(0,0,0,.87);
+
+
+//Breakpoints
+$small: 320px;
+$medium: 768px;
+$large: 991px;
+$xlarge: 1199px;
+
+//Utilities
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 //Typography
 html {
   font: normal 100%/1.5 'Ubuntu', sans-serif;
+  color: $font-color;
 }
 body {
   max-width: 100%;
@@ -31,34 +69,4 @@ h5 {
 h6 {
   font-size: 1rem;
   line-height: 1.5;
-}
-$h1: 1.802rem;
-$h2: 1.602rem;
-$h3: 1.424rem;
-$h4: 1.266rem;
-$h5: 1.125rem;
-$base: 1rem;
-$mini: .875rem;
-
-//Colors
-$white: rgba(255, 255, 255, 1);
-$bluegrey: rgba(52, 73, 94, 1);
-$orange: rgba(225, 112, 85, 1);
-$red: rgba(145, 14, 0, 1);
-$light-green: rgba(46, 204, 113, 1);
-$dark-green: rgba(58, 181, 110, 1);
-
-//Breakpoints
-$small: 320px;
-$medium: 768px;
-$large: 991px;
-$xlarge: 1199px;
-
-//Utilities
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }

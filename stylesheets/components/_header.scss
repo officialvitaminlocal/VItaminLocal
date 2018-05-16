@@ -16,9 +16,10 @@ header {
     }
     .header-menu-icon {
         float: left;
-        margin: 23px 0 0 16px;
+        padding: 12px 18px;
+        background:$bluegrey;
         i.fa.fa-bars {
-            color: $bluegrey;
+            color: white;
             font-size: 22.256px;
             margin-left: 4px;
             margin-bottom: 3px; 
@@ -28,7 +29,7 @@ header {
         span.header-icon-caption {
             font-size: 9.256px;
             font-weight: bold;
-            color: $bluegrey;
+            color: white;
             float: left;
             clear: both;
         }
@@ -37,14 +38,14 @@ header {
         //position: relative;
         //left: calc(50% - 122px);
         //top: 16px;
-        margin: 16px 0 0 24px;
+        margin: 12px 0 0 24px;
         img {
             width: 148px;
         }
     }
     .header-cart-icon {
         float: right;
-        margin: 22px 22px 0 0;
+        margin: 16px 22px 0 0;
         i.fa.fa-shopping-cart {
             color: $dark-green;
             font-size: 22.256px;
@@ -62,7 +63,7 @@ header {
     }
     .header-account-icon {
         float: right;
-        margin: 22px 22px 0 0;
+        margin: 16px 22px 0 0;
         i.fa.fa-user-circle-o {
             color: $dark-green;
             font-size: 22.256px;
@@ -83,7 +84,7 @@ header {
     form.header-search {
         display: block;
         box-sizing: border-box;
-        margin: 8px 0 0;
+        margin: 12px 0 0;
         padding: 0 16px;
         height: 40px;
         width: 100%;
