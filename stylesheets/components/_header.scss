@@ -5,11 +5,13 @@ header {
     z-index: 97;
     width: 100vw;
     //Height Without Search
-    //height: 72px;
-    height: 120px;
+    height: 58px;
+    //Height With Search
+    //height: 120px;
     background: white;
-    box-shadow: 0px 4px 8px rgba(0,0,0,.12);
-    //border-bottom: 2px solid $bc-lightgreen;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    //box-shadow: 0px 4px 8px rgba(0,0,0,.12);
+    //border-bottom: 2px solid $dark-green;
     a {
         display: inline-block;
         text-decoration: none;
@@ -38,16 +40,16 @@ header {
         //position: relative;
         //left: calc(50% - 122px);
         //top: 16px;
-        margin: 12px 0 0 24px;
+        margin: 16px 0 4px 16px;
         img {
-            width: 148px;
+            width: 124px;
         }
     }
     .header-cart-icon {
         float: right;
-        margin: 16px 22px 0 0;
+        margin: 12px 14px 0 0;
         i.fa.fa-shopping-cart {
-            color: $dark-green;
+            color: rgba(0,0,0,.48);
             font-size: 22.256px;
             margin-left: 1px;
             margin-bottom: 6px; 
@@ -56,59 +58,88 @@ header {
         span.header-icon-caption {
             font-size: 9.256px;
             font-weight: bold;
-            color: $dark-green;
+            color: rgba(0,0,0,.48);
             float: left;
             clear: both;
         }
     }
     .header-account-icon {
         float: right;
-        margin: 16px 22px 0 0;
-        i.fa.fa-user-circle-o {
-            color: $dark-green;
-            font-size: 22.256px;
-            margin-left: 11px;
+        margin: 15px 14px 0 0;
+        i.fa.fa-user-circle-o{
+            color: rgba(0,0,0,.48);
+            font-size: 19.4px;
+            margin-left: 12.4px;
             margin-bottom: 6px; 
             float: left;
         }
         span.header-icon-caption {
             font-size: 9.256px;
             font-weight: bold;
-            color: $dark-green;
+            color: rgba(0,0,0,.48);
             float: left;
             clear: both;
         }
     }
+    .header-search-icon {
+        float: right;
+        margin: 15px 14px 0 0;
+        i.fa.fa-search  {
+            color: rgba(0,0,0,.48);
+            font-size: 19.4px;
+            margin-left: 12.4px;
+            margin-bottom: 6px; 
+            float: left;
+        }
+        span.header-icon-caption {
+            font-size: 9.256px;
+            font-weight: bold;
+            color: rgba(0,0,0,.48);
+            float: left;
+            clear: both;
+        }
+    }
+}
 
-    //Header Search Bar
-    form.header-search {
-        display: block;
-        box-sizing: border-box;
-        margin: 12px 0 0;
+//Header Search Bar
+form.header-search {
+    position: fixed;
+    top: 90px;
+    background:white;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    height: 64px;
+    width: 100%;
+    z-index: 95;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    transition: top 200ms;
+    &.hide {
+        top: 26px;
+        transition: top 200ms;
+    }
+    input[type=search].header-search-field {
+        float: left;
+        width: calc(100% - 48px);
+        height: 100%;
         padding: 0 16px;
-        height: 40px;
-        width: 100%;
-        input.header-search-field {
-            float: left;
-            width: calc(100% - 48px);
-            height: 100%;
-            padding: 0 16px;
-            border: 0;
-            border-radius: 6px 0 0 6px;
-            background: rgba(0,0,0,.04);
-        }
-        button.header-search-button {
-            float: left;
-            height: 100%;
-            width: 48px;
-            border: 0;
-            border-radius: 0 6px 6px 0;
-            background: $light-green;
-            font-size: 18px;
-            box-sizing: border-box;
-            padding-bottom: 3px;
-            color: white;
-        }
+        border: 0;
+        -webkit-appearance:none;
+        -webkit-border-radius:6px 0 0 6px;
+        border-radius: 6px 0 0 6px;
+        background: rgba(0,0,0,.04);
+    }
+    button.header-search-button {
+        float: left;
+        height: 100%;
+        width: 48px;
+        border: 0;
+        border-radius: 0 6px 6px 0;
+        background: $light-green;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding-bottom: 3px;
+        color: white;
     }
 }
 
@@ -212,4 +243,5 @@ div.sidebar-overlay {
     background: $dark-green;
     position: fixed;
     width: 100vw;
+    z-index: 96;
 }

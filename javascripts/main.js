@@ -28,3 +28,14 @@ $('.sidebar-acordion-toggle').click(function() {
     $(this).toggleClass('minus');
   }
 })
+
+//Search in Nav (Mobile)
+$('.header-search-icon').click(function(){
+  $('.header-search').toggleClass('hide');
+});
+
+//Reset-Main Content
+function resetMainContent (element) {
+  var topPosition = $(element).offset().top + $(element).height();
+  $('main')
+}

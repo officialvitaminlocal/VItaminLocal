@@ -1,5 +1,5 @@
 main {
-	padding: 152px 0 0;
+	padding: 154px 0 0;
 	.hero {
 		a {
 			width:100%;
@@ -8,7 +8,7 @@ main {
 			}
 		}
 	}
-	section.top-categories {
+	.top-categories {
 		width:100vw;
 		padding: 0 0 0 1rem;
 		box-sizing:border-box;
@@ -38,7 +38,7 @@ main {
 			}
 		}
 	}
-	section.featured-product {
+	.featured-products {
 		width:100vw;
 		padding: 0 1rem;
 		box-sizing:border-box;
@@ -52,9 +52,9 @@ main {
 				font-weight: bold;
 			}
 		}
-		.featured-product-container {
-			width: 100%;
+		.product-container {
 			padding: 1rem;
+			//margin:1rem;
 			box-sizing: border-box;
 			border: 1px solid rgba(0,0,0,.12);
 			.product-image {
@@ -64,34 +64,36 @@ main {
 				margin: 1rem auto;
 			}
 			.product-details {
-				text-align: center;
+				margin: 2rem 0 0;
 				.product-brand {
 					color: rgba(0,0,0,.36);
 					font-size: $mini;
 					font-weight: bold;
-					margin: .175em;
+					margin: .175em 0;
 				}
 				.product-title{
 					color: rgba(0,0,0,.87);
-					font-size: $base;
+					font-size: $h5;
 					font-weight: bold;
-					margin: .35em;
+					margin: .5rem 0;
+					line-height:1.125em;
 				}
 				.product-subdetails {
-					color: rgba(0,0,0,.72);
+					color: rgba(0,0,0,.48);
 					font-size: $mini;
-					margin: .175em;
+					margin: .5rem 0;
 				}
 				.product-cta {
-					margin:2rem 0;
+					margin:1rem 0 0;
 					.price-normal {
 						color: rgba(0,0,0,.48);
-						margin: .175em;
+						margin: .175em 0;
+						text-decoration: line-through;
 					}
 					.price-sale {
-						font-size: $h5;
-						color: $red;
-						margin: .35em;
+						font-size: $h1;
+						color: $bluegrey;
+						//margin: .35em;
 						font-weight: bold;
 					}
 					.add-to-cart {
@@ -99,10 +101,110 @@ main {
 						background: $orange;
 						color: white;
 						box-sizing:border-box;
-						margin: 1em;
-						padding: 1em;
+						margin: 1.5rem 0 1rem;
+						padding: .875em;
+						font-size: $h5;
+						text-align: center;
+						font-weight: bold;
+						border-radius: 6px;
 					}
 				}
+			}
+		}
+	}
+	.featured-category {
+		width:100vw;
+		padding: 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h4 {
+			margin: 1rem 0;
+			color:$bluegrey;
+			span {
+				font-weight: bold;
+			}
+		}
+		.product-container {
+			width: 48%;
+			margin: 1%;
+			float:left;
+			padding: 1rem;
+			box-sizing: border-box;
+			border: 1px solid rgba(0,0,0,.12);
+			&:nth-of-type(odd) {
+				margin: 0 2% 0 0;
+			} 
+			&:nth-of-type(even) {
+				margin:0;
+			}
+			.product-image {
+				width: 50%;
+				height: auto;
+				display: block;
+				margin: .5rem auto;
+			}
+			.product-details {
+				margin: 1rem 0 0;
+				.product-brand {
+					color: rgba(0,0,0,.36);
+					font-size: $mini;
+					font-weight: bold;
+					margin: .175em 0;
+				}
+				.product-title{
+					color: rgba(0,0,0,.87);
+					font-size: $base;
+					font-weight: bold;
+					margin: .5rem 0;
+					line-height:1.125em;
+				}
+				.product-subdetails {
+					color: rgba(0,0,0,.48);
+					font-size: $mini;
+					margin: .5rem 0;
+				}
+				.product-cta {
+					margin:1rem 0 0;
+					.price-normal {
+						color: rgba(0,0,0,.48);
+						margin: .175em 0;
+						text-decoration: line-through;
+					}
+					.price-sale {
+						font-size: $h5;
+						color: $bluegrey;
+						//margin: .35em;
+						font-weight: bold;
+					}
+					.add-to-cart {
+						display: block;
+						background: $orange;
+						color: white;
+						box-sizing:border-box;
+						margin: 1.5rem 0 1rem;
+						padding: .875em;
+						font-size: $h5;
+						text-align: center;
+						font-weight: bold;
+						border-radius: 6px;
+					}
+				}
+			}
+		}
+	}
+	.information {
+		width:100vw;
+		padding: 2rem 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h2 {
+			color:$bluegrey;
+			span {
+				font-weight: bold;
 			}
 		}
 	}

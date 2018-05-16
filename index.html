@@ -61,23 +61,27 @@
         <span class="header-icon-caption">MENU</span>
       </a>
     <a class="header-logo" href="#">
-          <img src="images/vitaminlocal-logo.svg">
-      </a>
+        <img src="images/vitaminlocal-logo.svg">
+    </a>
+    <a class="header-search-icon">
+      <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
+      <span class="header-icon-caption">SEARCH</span>
+    </a>
     <a class="header-cart-icon" href="#">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <span class="header-icon-caption">CART</span>
-      </a>
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <span class="header-icon-caption">CART</span>
+    </a>
     <a class="header-account-icon">
       <i class="fa fa-user-circle-o" aria-hidden="true"></i>
       <span class="header-icon-caption">ACCOUNT</span>
     </a>
-    <form role="header-search" method="get" class="header-search">
-      <input type="search" class="header-search-field" placeholder="Search by Keyword or Item #" />
-      <button type="submit" class="header-search-button" value="">
-        <i class="fa fa-search fa-flip-horizontal"></i>
-      </button>
-    </form>
   </header>
+  <form role="header-search" method="get" class="header-search">
+    <input type="search" class="header-search-field" placeholder="Search by Keyword or Item #" />
+    <button type="submit" class="header-search-button" value="">
+      <i class="fa fa-search fa-flip-horizontal"></i>
+    </button>
+  </form>
   <main>
     <div class="hero">
       <a href=""><img src="//via.placeholder.com/320x116"></a>
@@ -107,33 +111,85 @@
         </div>
       </div>
     </section>
-    <section class="featured-product">
+    <section class="featured-products">
       <h4>Featured <span>Product</span></h4>
-      <div class="featured-product-container">
+      <div class="product-container">
         <img class="product-image" src="//via.placeholder.com/220x320">
         <div class="product-details">
           <div class="product-brand">Vitamin Local</div>
           <div class="product-title">Super Berry Test Product Complex</div>
           <div class="product-subdetails">
             <span class="product-potency">320 mg</span>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
+            &nbsp;|&nbsp;
             <span class="product-size">30 Capsules</span>
           </div>
           <div class="product-cta">
-            <div class="price-normal">
-              <span>Normal Price:</span>
-              <span>$29.99</span>
-            </div>
-            <div class="price-sale">
-              <span>Sale Price:</span>
+            <span class="price-sale">
               <span>$15.00</span>
-            </div>
-            <a class="add-to-cart">ADD TO CART</a>
+            </span>
+            <span class="price-normal">
+              <span>$29.99</span>
+            </span>
+            <a class="add-to-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                &nbsp;
+                ADD TO CART
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <section class="featured-category">
+        <h4><span>Best Sellers</span></h4>
+        <div class="product-container">
+          <img class="product-image" src="//via.placeholder.com/220x320">
+          <div class="product-details">
+            <div class="product-brand">Vitamin Local</div>
+            <div class="product-title">Super Berry Test Product Complex</div>
+            <div class="product-subdetails">
+              <span class="product-potency">320 mg</span>
+              <br>
+              <span class="product-size">30 Capsules</span>
+            </div>
+            <div class="product-cta">
+              <span class="price-sale">
+                <span>$15.00</span>
+              </span>
+              <span class="price-normal">
+                <span>$29.99</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="product-container">
+            <img class="product-image" src="//via.placeholder.com/220x320">
+            <div class="product-details">
+              <div class="product-brand">Vitamin Local</div>
+              <div class="product-title">Super Berry Test Product Complex</div>
+              <div class="product-subdetails">
+                <span class="product-potency">320 mg</span>
+                <br>
+                <span class="product-size">30 Capsules</span>
+              </div>
+              <div class="product-cta">
+                <span class="price-sale">
+                  <span>$15.00</span>
+                </span>
+                <span class="price-normal">
+                  <span>$29.99</span>
+                </span>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="information">
+        <h2>What's <span>local</span> <br>about <span>vitaminlocal</span></h2>
+        <p>Excepteur sunt laboris elit magna consectetur. Occaecat magna tempor laborum consequat laborum eu incididunt duis enim incididunt. Anim tempor excepteur non et Lorem. In voluptate aliquip laborum sit nulla cillum. Id sint Lorem laborum incididunt veniam cupidatat excepteur id quis amet. Ea laboris velit ullamco velit do deserunt amet mollit tempor esse proident minim cillum.</p>
+      </section>
   </main>
+  <footer>
+
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="javascripts/main.js"></script>
 </body>

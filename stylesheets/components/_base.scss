@@ -1,6 +1,15 @@
 /*
  * Wew Boy
  */
+//Remove Rounded Corners in iOS
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
+
 //Heading Variables
 $h1: 1.802rem;
 $h2: 1.602rem;
@@ -52,7 +61,7 @@ h1 {
 }
 h2 {
   font-size: 1.602rem;
-  line-height: 1.87;
+  line-height: 1.18;
 }
 h3 {
   font-size: 1.424rem;
@@ -66,7 +75,7 @@ h5 {
   font-size: 1.125rem;
   line-height: 1.33;
 }
-h6 {
+h6,p {
   font-size: 1rem;
   line-height: 1.5;
 }
