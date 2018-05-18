@@ -1,5 +1,7 @@
 main {
-	padding: 154px 0 0;
+	//With Search Expanded
+	//padding: 154px 0 0;
+	padding: 91px 0 0;
 	.hero {
 		a {
 			width:100%;
@@ -98,7 +100,7 @@ main {
 					}
 					.add-to-cart {
 						display: block;
-						background: $orange;
+						background: $light-green;
 						color: white;
 						box-sizing:border-box;
 						margin: 1.5rem 0 1rem;
@@ -195,16 +197,27 @@ main {
 		}
 	}
 	.information {
+		background:rgba(0,0,0,.04);
 		width:100vw;
-		padding: 2rem 1rem;
+		margin-top: 2rem;
+		padding: 2rem 1rem 1rem;
 		box-sizing:border-box;
 		display: block;
 		overflow-x: scroll;
 		overflow-y: hidden;
-		h2 {
+		.copy-area {
+			h2 {
 			color:$bluegrey;
-			span {
-				font-weight: bold;
+				span {
+					font-weight: bold;
+					&.local-hightlight {
+						color:$dark-green;
+					}
+				}
+			}
+			img.copy-logo {
+				width: 280px;
+				margin: -32px 32px 16px;
 			}
 		}
 	}
