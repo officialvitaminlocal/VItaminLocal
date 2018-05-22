@@ -129,8 +129,7 @@ main {
 			}
 		}
 		.product-container {
-			width: 48%;
-			margin: 1%;
+			width: 49%;
 			float:left;
 			padding: 1rem;
 			box-sizing: border-box;
@@ -197,7 +196,7 @@ main {
 		}
 	}
 	.information {
-		background:rgba(0,0,0,.04);
+		background:lighten($bluegrey,68%);
 		width:100vw;
 		margin-top: 2rem;
 		padding: 2rem 1rem 1rem;

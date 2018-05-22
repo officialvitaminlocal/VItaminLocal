@@ -1,13 +1,36 @@
 footer {
-	.social-media {
+	.footer-social {
 		width:100vw;
 		padding: 2rem 1rem;
 		box-sizing:border-box;
 		display: block;
 		background:$light-green;
 		color:white;
-		h2 {
-			font-weight: bold;
+		.social-container {
+			display: block;
+			box-sizing: content-box;
+			padding: 1rem 2rem;
+			border: 1px solid white;
+			background: rgba($bluegrey,.16);
+			border-radius: 6px;
 		}
+		h2 {
+			font-size: $h1;
+			span {
+				font-weight: bold;
+			}
+		}
+		p {
+			
+		}
+		a {
+			display: block;
+			font-weight: bold;
+			font-size:$h1;
+			margin:.625em 0;
+		}
+	}
+	.footer-signup {
+		
 	}
 }
