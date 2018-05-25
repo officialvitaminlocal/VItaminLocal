@@ -1,0 +1,15 @@
+{
+    "deploy.reloaded": {
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "VitaminLocal Theme",
+                "description": "A SFTP folder",
+
+                "host": "theme.vitaminlocal.com", "port": 22,
+                "user": "runcloud", "password": "Because1Can!",
+                "dir": "/home/runcloud/webapps/theme-vitaminlocal"
+            },
+        ]
+    }
+}
