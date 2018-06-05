@@ -1,0 +1,28 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "Vitamin Local Theme Package",
+                "description": "Package version 0",
+                "files": [
+                    "**/*",
+                ],
+                "exclude": [
+                ]
+            }
+        ],
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "Theme.Vitaminlocal.com",
+
+                "host": "theme.vitaminlocal.com",
+                "user": "runcloud", "password": "Because1Can!",
+
+                "mappings": {
+                    "**/*" : "/home/runcloud/webapps/theme-vitaminlocal" 
+                }
+            }
+        ]
+    }
+}

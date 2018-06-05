@@ -1,21 +1,25 @@
 footer {
-	.footer-social {
-		width:100vw;
+	@extend %clearfix;
+	width: 100vw;
+	.footer-section {
+		width: 100%;
 		padding: 2rem 1rem;
-		box-sizing:border-box;
+		box-sizing: border-box;
 		display: block;
-		background:$light-green;
-		color:white;
+	}
+	.footer-social {
+		background: $light-green;
+		color: white;
 		.social-container {
 			display: block;
-			box-sizing: content-box;
+			box-sizing: border-box;
 			padding: 1rem 2rem;
 			border: 1px solid white;
-			background: rgba($bluegrey,.16);
+			background: rgba($bluegrey, .16);
 			border-radius: 6px;
 		}
 		h2 {
-			font-size: $h1;
+			font-size: $h2;
 			span {
 				font-weight: bold;
 			}
@@ -23,9 +27,56 @@ footer {
 		a {
 			display: block;
 			font-weight: bold;
-			font-size:$h1;
-			margin:.625em 0;
+			font-size: $h1;
+			margin: .625em 0;
 		}
 	}
-	.footer-signup {}
+	.footer-signup {
+		background: darken($bluegrey, 14%);
+		color: white;
+		form.signup-form {
+			box-sizing: border-box;
+			width: 100%;
+			input {
+				font-family: $site-font;
+				font-size: $base;
+				box-sizing: border-box;
+				width: 100%;
+				padding: 1em;
+				margin: .5em 0;
+				border: 0;
+				border-radius: 2px;
+			}
+			button {
+				box-sizing: border-box;
+				width: 100%;
+				padding: .75em;
+				margin: .5em 0;
+				border: 0;
+				border-radius: 2px;
+				color:white;
+				font-weight: bold;
+				font-size: $h5;
+				font-family: $site-font;
+				text-transform: uppercase;
+				background: rgba(white,.24);
+			}
+		}
+		h2 {
+			font-size: $h3;
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+	.footer-links {
+		background: darken($bluegrey, 14%);
+		color: white;
+		h2 {
+			font-size: $h3;
+			span {
+				font-weight: bold;
+			}
+		}
+	}
 }

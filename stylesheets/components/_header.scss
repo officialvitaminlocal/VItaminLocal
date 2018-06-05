@@ -47,7 +47,7 @@ header {
     }
     .header-cart-icon {
         float: right;
-        margin: 13px 14px 0 0;
+        margin: 12px 14px 0 0;
         i.fa.fa-shopping-cart {
             color: rgba(0,0,0,.48);
             font-size: 22.256px;
@@ -169,7 +169,7 @@ aside.sidebar {
         font-size: $h5;
         padding: 1.2em;
         display: block;
-        border-bottom: 1px solid $bluegrey;
+        border-bottom: 1px solid rgba($bluegrey,.16);
         i {
             font-weight: bold;
             font-size: $h4;
