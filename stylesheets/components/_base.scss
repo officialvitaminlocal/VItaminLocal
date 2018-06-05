@@ -11,7 +11,7 @@ input[type="submit"] {
      border-radius: 0;
 }
 
-//Heading Variables
+//Font Variables
 $h1: 1.802rem;
 $h2: 1.602rem;
 $h3: 1.424rem;
@@ -19,6 +19,8 @@ $h4: 1.266rem;
 $h5: 1.125rem;
 $base: 1rem;
 $mini: .875rem;
+
+$site-font: 'Ubuntu', sans-serif;
 
 //Colors
 $white: rgba(255, 255, 255, 1);

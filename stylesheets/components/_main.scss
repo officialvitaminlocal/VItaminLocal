@@ -1,0 +1,224 @@
+main {
+	//With Search Expanded
+	//padding: 154px 0 0;
+	padding: 91px 0 0;
+	.hero {
+		a {
+			width:100%;
+			img {
+				width:100vw;
+			}
+		}
+	}
+	.top-categories {
+		width:100vw;
+		padding: 0 0 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		h4 {
+			color:$bluegrey;
+			margin: 1rem 0;
+		}
+		span {
+			font-weight: bold;
+		}
+		.top-categories-slider {
+			width: 100%;
+			overflow-x: scroll;
+			-webkit-overflow-scrolling: touch;
+			.top-categories-scroll {
+				width: calc((40vw * 6) + (1rem *6));
+				margin: 0 0 1rem;
+				figure {
+					display: inline-block;
+					margin: 0 .5rem 0 0;
+					width: 40vw;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.featured-products {
+		width:100vw;
+		padding: 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h4 {
+			margin: 1rem 0;
+			color:$bluegrey;
+			span {
+				font-weight: bold;
+			}
+		}
+		.product-container {
+			padding: 1rem;
+			//margin:1rem;
+			box-sizing: border-box;
+			border: 1px solid rgba(0,0,0,.12);
+			.product-image {
+				width: 160px;
+				height: auto;
+				display: block;
+				margin: 1rem auto;
+			}
+			.product-details {
+				margin: 2rem 0 0;
+				.product-brand {
+					color: rgba(0,0,0,.36);
+					font-size: $mini;
+					font-weight: bold;
+					margin: .175em 0;
+				}
+				.product-title{
+					color: rgba(0,0,0,.87);
+					font-size: $h5;
+					font-weight: bold;
+					margin: .5rem 0;
+					line-height:1.125em;
+				}
+				.product-subdetails {
+					color: rgba(0,0,0,.48);
+					font-size: $mini;
+					margin: .5rem 0;
+				}
+				.product-cta {
+					margin:1rem 0 0;
+					.price-normal {
+						color: rgba(0,0,0,.48);
+						margin: .175em 0;
+						text-decoration: line-through;
+					}
+					.price-sale {
+						font-size: $h1;
+						color: $bluegrey;
+						//margin: .35em;
+						font-weight: bold;
+					}
+					.add-to-cart {
+						display: block;
+						background: $light-green;
+						color: white;
+						box-sizing:border-box;
+						margin: 1.5rem 0 1rem;
+						padding: .875em;
+						font-size: $h5;
+						text-align: center;
+						font-weight: bold;
+						border-radius: 6px;
+					}
+				}
+			}
+		}
+	}
+	.featured-category {
+		width:100vw;
+		padding: 0 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		h4 {
+			margin: 1rem 0;
+			color:$bluegrey;
+			span {
+				font-weight: bold;
+			}
+		}
+		.product-container {
+			width: 48%;
+			margin: 1%;
+			float:left;
+			padding: 1rem;
+			box-sizing: border-box;
+			border: 1px solid rgba(0,0,0,.12);
+			&:nth-of-type(odd) {
+				margin: 0 2% 0 0;
+			} 
+			&:nth-of-type(even) {
+				margin:0;
+			}
+			.product-image {
+				width: 50%;
+				height: auto;
+				display: block;
+				margin: .5rem auto;
+			}
+			.product-details {
+				margin: 1rem 0 0;
+				.product-brand {
+					color: rgba(0,0,0,.36);
+					font-size: $mini;
+					font-weight: bold;
+					margin: .175em 0;
+				}
+				.product-title{
+					color: rgba(0,0,0,.87);
+					font-size: $base;
+					font-weight: bold;
+					margin: .5rem 0;
+					line-height:1.125em;
+				}
+				.product-subdetails {
+					color: rgba(0,0,0,.48);
+					font-size: $mini;
+					margin: .5rem 0;
+				}
+				.product-cta {
+					margin:1rem 0 0;
+					.price-normal {
+						color: rgba(0,0,0,.48);
+						margin: .175em 0;
+						text-decoration: line-through;
+					}
+					.price-sale {
+						font-size: $h5;
+						color: $bluegrey;
+						//margin: .35em;
+						font-weight: bold;
+					}
+					.add-to-cart {
+						display: block;
+						background: $light-green;
+						color: white;
+						box-sizing:border-box;
+						margin: 1.5rem 0 1rem;
+						padding: .875em;
+						font-size: $h5;
+						text-align: center;
+						font-weight: bold;
+						border-radius: 6px;
+					}
+				}
+			}
+		}
+	}
+	.information {
+		//background:rgba(0,0,0,.04);
+		width:100vw;
+		margin-top: 2rem;
+		padding: 2rem 1rem 1rem;
+		box-sizing:border-box;
+		display: block;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		.copy-area {
+			h2 {
+			color:$bluegrey;
+				span {
+					font-weight: bold;
+					&.local-hightlight {
+						color:$dark-green;
+					}
+				}
+			}
+			img.copy-logo {
+				width: 280px;
+				margin: -32px 32px 16px;
+			}
+		}
+	}
+}
