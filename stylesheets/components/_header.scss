@@ -18,7 +18,7 @@ header {
     }
     .header-menu-icon {
         float: left;
-        padding: 12px 18px;
+        padding: 12px 16px;
         background:$bluegrey;
         i.fa.fa-bars {
             color: white;
@@ -235,7 +235,7 @@ div.sidebar-overlay {
 }
 .header-offer-promo {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     color: white;
     text-transform: uppercase;
     text-align: center;
