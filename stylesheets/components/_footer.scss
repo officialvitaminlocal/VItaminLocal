@@ -8,7 +8,7 @@ footer {
 		display: block;
 	}
 	.footer-social {
-		background: $light-green;
+		background: lighten($light-green,14%);
 		color: white;
 		.social-container {
 			display: block;
@@ -34,6 +34,7 @@ footer {
 	.footer-signup {
 		background: $bluegrey;
 		color: white;
+		border-bottom: 2px solid rgba(255,255,255,.12);
 		form.signup-form {
 			box-sizing: border-box;
 			width: 100%;
@@ -70,7 +71,7 @@ footer {
 		}
 	}
 	.footer-links {
-		background: darken($bluegrey, 14%);
+		background: $bluegrey;
 		color: white;
 		h2 {
 			font-size: $h3;
@@ -79,7 +80,23 @@ footer {
 			}
 		}
 		a {
+			display: block;
+			width: 100%;
+			text-align: center;
+			background: rgba(white,.24);
+			padding: 1em 0;
+			margin: 1em 0;
+			font-weight: 500;
+			border-radius: 2px;
 			
+		}
+	}
+	.footer-copyright {
+		text-align: center;
+		img {
+			display: block;
+			width:200px;
+			margin: auto;
 		}
 	}
 }

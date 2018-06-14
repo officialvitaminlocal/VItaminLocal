@@ -20,6 +20,12 @@ header {
         float: left;
         padding: 12px 16px;
         background:$bluegrey;
+        height: 60px;
+        width:60px;
+        box-sizing: border-box;
+        @include breakpoint($medium) {
+            width: 112px;
+        }
         i.fa.fa-bars {
             color: white;
             font-size: 22.256px;
@@ -27,6 +33,11 @@ header {
             margin-bottom: 3px; 
             float: left;
             clear: both;
+            @include breakpoint($medium) {
+                clear: none;
+                margin-top: 8px;
+                margin-left: 6px;
+            }
         }
         span.header-icon-caption {
             font-size: 9.256px;
@@ -34,6 +45,12 @@ header {
             color: white;
             float: left;
             clear: both;
+            @include breakpoint($medium) {
+                clear: none;
+                margin-top: 12px;
+                margin-left: 12px;
+                font-size: 12px;
+            }
         }
     }
     .header-logo {
@@ -52,7 +69,7 @@ header {
             color: rgba(0,0,0,.48);
             font-size: 22.256px;
             margin-left: 1px;
-            margin-bottom: 6px; 
+            margin-bottom: 5px; 
             float: left;
         }
         span.header-icon-caption {
@@ -65,7 +82,12 @@ header {
     }
     .header-account-icon {
         float: right;
-        margin: 15px 14px 0 0;
+        margin: 13px 14px 0 0;
+        display: none;
+        //BUGFIX for phones with small width
+        @include breakpoint("360px") {
+            display: block;
+        }
         i.fa.fa-user-circle-o{
             color: rgba(0,0,0,.48);
             font-size: 19.4px;
@@ -83,7 +105,7 @@ header {
     }
     .header-search-icon {
         float: right;
-        margin: 15px 14px 0 0;
+        margin: 13px 14px 0 0;
         i.fa.fa-search  {
             color: rgba(0,0,0,.48);
             font-size: 19.4px;
@@ -113,10 +135,11 @@ form.header-search {
     width: 100%;
     z-index: 95;
     border-bottom: 1px solid rgba(0,0,0,.12);
-    transition: top 200ms;
+    transition: height 180ms;
     &.hide {
-        top: 26px;
-        transition: top 200ms;
+        height: 0;
+        padding: 0 16px;
+        overflow: hidden;
     }
     input[type=search].header-search-field {
         float: left;
@@ -153,10 +176,8 @@ aside.sidebar {
     transition: left 300ms;
     overflow: hidden;
     overflow-y: scroll;
-    @include breakpoint($small) {
-        left: -70vw;
-        width: 70vw;
-    }
+    left: -70vw;
+    width: 70vw;
     @include breakpoint($medium) {
         left: -320px;
         width: 320px;
@@ -193,10 +214,8 @@ aside.sidebar {
         min-height: 100vh;
         background: $white;
         transition: left 300ms;
-        @include breakpoint($small) {
-            left: 140vw;
-            width: 70vw;
-        }
+        left: 140vw;
+        width: 70vw;
         @include breakpoint($medium) {
             left: 640px;
             width: 320px;
