@@ -29,10 +29,16 @@ main {
 			.top-categories-scroll {
 				width: calc((40vw * 6) + (1rem *6));
 				margin: 0 0 1rem;
+				@include breakpoint($medium) {
+					width: calc((220px * 6) + (1rem *6));
+				}
 				figure {
 					display: inline-block;
 					margin: 0 .5rem 0 0;
 					width: 40vw;
+					@include breakpoint($medium) {
+						width: 220px;
+					}
 					img {
 						width: 100%;
 					}
