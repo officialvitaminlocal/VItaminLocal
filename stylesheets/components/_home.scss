@@ -61,6 +61,7 @@ main {
 			}
 		}
 		.product-container {
+			@extend %clearfix;
 			padding: 1rem;
 			//margin:1rem;
 			box-sizing: border-box;
@@ -70,9 +71,17 @@ main {
 				height: auto;
 				display: block;
 				margin: 1rem auto;
+				@include breakpoint($medium) {
+					float: left;
+					margin: 1rem 2rem;
+				}
 			}
 			.product-details {
 				margin: 2rem 0 0;
+				@include breakpoint($medium) {
+					float:left;
+					margin: 2rem 2rem;
+				}
 				.product-brand {
 					color: rgba(0,0,0,.36);
 					font-size: $mini;
@@ -141,10 +150,19 @@ main {
 			box-sizing: border-box;
 			border: 1px solid rgba(0,0,0,.12);
 			&:nth-of-type(odd) {
-				margin: 0 2% 0 0;
+				margin: 0 2% 1rem 0;
 			} 
 			&:nth-of-type(even) {
-				margin:0;
+				margin:0 0 1rem;
+			}
+			@include breakpoint($medium) {
+				width:24%;
+				&:nth-of-type(odd) {
+					margin: 0 .5% 0;
+				} 
+				&:nth-of-type(even) {
+					margin: 0 .5% 0;
+				}
 			}
 			.product-image {
 				width: 50%;

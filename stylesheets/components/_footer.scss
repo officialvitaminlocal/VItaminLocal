@@ -3,9 +3,10 @@ footer {
 	width: 100vw;
 	.footer-section {
 		width: 100%;
-		padding: 2rem 1rem;
+		padding: 2rem 2rem;
 		box-sizing: border-box;
 		display: block;
+		float:left;
 	}
 	.footer-social {
 		background: lighten($light-green,14%);
@@ -29,12 +30,28 @@ footer {
 			font-weight: bold;
 			font-size: $h1;
 			margin: .625em 0;
+			@include breakpoint($medium) {
+				width: 30%;
+				display: inline-block;
+				box-sizing: border-box;
+				&:nth-of-type(2) {
+					border: 1px solid;
+					border-width: 0 1px 0;
+					text-align: center;
+					margin: 3%;
+				}
+			}
 		}
 	}
 	.footer-signup {
 		background: $bluegrey;
 		color: white;
 		border-bottom: 2px solid rgba(255,255,255,.12);
+		@include breakpoint($medium) {
+			width:50%;
+			height:340px;
+			border-right:1px solid rgba(255,255,255,.12);
+		}
 		form.signup-form {
 			box-sizing: border-box;
 			width: 100%;
@@ -73,6 +90,10 @@ footer {
 	.footer-links {
 		background: $bluegrey;
 		color: white;
+		@include breakpoint($medium) {
+			width:50%;
+			height:340px;
+		}
 		h2 {
 			font-size: $h3;
 			span {
