@@ -34,10 +34,10 @@ footer {
 				width: 30%;
 				display: inline-block;
 				box-sizing: border-box;
+				text-align: center;
 				&:nth-of-type(2) {
-					border: 1px solid;
+					border: 1px solid rgba(255,255,255,0.64);
 					border-width: 0 1px 0;
-					text-align: center;
 					margin: 3%;
 				}
 			}
@@ -114,6 +114,9 @@ footer {
 	}
 	.footer-copyright {
 		text-align: center;
+		p {
+			font-size:$mini;
+		}
 		img {
 			display: block;
 			width:200px;
